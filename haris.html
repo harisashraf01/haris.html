@@ -1,0 +1,299 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Jaan Nazira ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #16001f, #5e164f, #c2185b);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    padding: 35px 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 30px;
+    background: rgba(255,255,255,0.09);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 40px rgba(255, 0, 100, 0.3);
+    animation: appear 1.5s ease;
+}
+
+.heart {
+    font-size: 65px;
+    animation: heartbeat 1s infinite;
+}
+
+h1 {
+    color: #ffb6d5;
+    font-size: clamp(30px, 7vw, 48px);
+    margin: 15px 0;
+    text-shadow: 0 0 20px #ff1493;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.time-box {
+    flex: 1;
+    max-width: 130px;
+    padding: 20px 8px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.13);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.time-box span {
+    display: block;
+    font-size: clamp(28px, 7vw, 43px);
+    font-weight: bold;
+    color: #ffb6d5;
+}
+
+.time-box small {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#surprise {
+    display: none;
+    animation: appear 2s ease;
+}
+
+#surprise h2 {
+    font-size: 32px;
+    color: #ffd1e5;
+    margin: 20px 0;
+}
+
+.message {
+    font-size: 18px;
+    line-height: 1.9;
+    margin: 20px 0;
+}
+
+button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #ff4f91;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #ff4f91;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.07);
+    background: #ff1680;
+}
+
+#loveMessage {
+    display: none;
+    margin-top: 25px;
+    font-size: 19px;
+    line-height: 1.9;
+    color: #ffe1ed;
+}
+
+.floating {
+    position: fixed;
+    bottom: -40px;
+    animation: floatUp linear infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-115vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .timer { gap: 6px; }
+    .time-box { padding: 15px 4px; }
+    .time-box small { font-size: 10px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="heart">❤️</div>
+
+    <h1>My Jaan Nazira 🥹💖</h1>
+
+    <p class="subtitle">
+        Meri sabse pyari jaan ka birthday aane wala hai! 🎂<br>
+        Har second mujhe tumhare special day ke aur kareeb la raha hai. 💕
+    </p>
+
+    <div id="countdownSection">
+        <h2>🎁 Birthday Begins In 🎁</h2>
+
+        <div class="timer">
+            <div class="time-box">
+                <span id="hours">00</span>
+                <small>HOURS</small>
+            </div>
+
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <small>MINUTES</small>
+            </div>
+
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <small>SECONDS</small>
+            </div>
+        </div>
+
+        <p>
+            Bas raat ke 12 bajne ka intezaar hai,
+            kyunki meri jaan ka special day shuru hone wala hai. 🫶
+        </p>
+    </div>
+
+    <div id="surprise">
+        <div class="heart">🎂💗🎂</div>
+        <h2>HAPPY BIRTHDAY, NAZIRA! 🎉</h2>
+
+        <p class="message">
+            Happy Birthday meri pyari si jaan! ❤️🥹<br>
+            Aaj ka din mere liye bhi bohot special hai,
+            kyunki aaj ke din meri duniya mein ek aisi
+            insaan aayi jo mere liye bohot precious hai. 💖
+            <br><br>
+            Meri dua hai tumhari zindagi hamesha khushiyon,
+            mohabbat aur kamyabi se bhari rahe. 🌸
+            Tumhari har smile salamat rahe aur tumhara
+            har khwab poora ho. 🫶
+            <br><br>
+            Aaj, kal aur aane wale har birthday par,
+            tumhare chehre par muskurahat dekhna chahta hoon.
+            Tum hamesha khush raho, meri jaan. 💋
+        </p>
+
+        <button onclick="showLove()">
+            Ek Aur Surprise Kholo 💌
+        </button>
+
+        <div id="loveMessage">
+            Nazira, ❤️<br><br>
+            Agar mujhe apni zindagi ke liye ek khoobsurat
+            dua maangne ka mauka mile, toh main tumhari
+            khushi maangunga. 🥹💗
+            <br><br>
+            Main chahta hoon ke hum apni zindagi ke
+            khoobsurat pal ek saath banayein, ek doosre
+            ko samjhein, mushkil waqt mein saath dein,
+            aur har guzarte saal ke saath hamari
+            mohabbat aur gehri hoti jaye. ♾️
+            <br><br>
+            <strong>Happy Birthday, meri jaan Nazira! 🎂❤️</strong>
+            <br><br>
+            With all my love,<br>
+            <strong>Yours, Haris 💖</strong>
+        </div>
+    </div>
+</div>
+
+<script>
+function updateCountdown() {
+    const now = new Date();
+    const midnight = new Date(now);
+    midnight.setHours(24, 0, 0, 0);
+
+    const difference = midnight - now;
+
+    if (difference <= 0) {
+        document.getElementById("countdownSection").style.display = "none";
+        document.getElementById("surprise").style.display = "block";
+        return;
+    }
+
+    const hours = Math.floor(difference / 3600000);
+    const minutes = Math.floor((difference % 3600000) / 60000);
+    const seconds = Math.floor((difference % 60000) / 1000);
+
+    document.getElementById("hours").textContent =
+        String(hours).padStart(2, "0");
+
+    document.getElementById("minutes").textContent =
+        String(minutes).padStart(2, "0");
+
+    document.getElementById("seconds").textContent =
+        String(seconds).padStart(2, "0");
+}
+
+function showLove() {
+    document.getElementById("loveMessage").style.display = "block";
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "floating";
+    heart.textContent = ["❤️", "💖", "💕", "✨", "🌹"][
+        Math.floor(Math.random() * 5)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (18 + Math.random() * 25) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 10000);
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+setInterval(createHeart, 450);
+</script>
+
+</body>
+</html>
+```
